@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Counters Row preview">
+  <rect width="320" height="180" fill="#ffffff"/>
+  <g fill="#2f74e6" font-family="Arial, sans-serif" text-anchor="middle" font-weight="700">
+    <text x="80"  y="96" font-size="30">120</text>
+    <text x="160" y="96" font-size="30">98%</text>
+    <text x="240" y="96" font-size="30">24</text>
+  </g>
+  <g fill="#94a3b8" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">
+    <text x="80"  y="114">Projects</text>
+    <text x="160" y="114">Satisfaction</text>
+    <text x="240" y="114">Awards</text>
+  </g>
+</svg>

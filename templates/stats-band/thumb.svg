@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Stats Band preview">
+  <rect width="320" height="180" fill="#0f172a"/>
+  <g fill="#e2e8f0" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="64"  y="86" font-size="26" font-weight="700">18</text>
+    <text x="128" y="86" font-size="26" font-weight="700">40</text>
+    <text x="192" y="86" font-size="26" font-weight="700">44</text>
+    <text x="256" y="86" font-size="26" font-weight="700">$0</text>
+  </g>
+  <g fill="#64748b" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">
+    <text x="64"  y="104">Extensions</text>
+    <text x="128" y="104">Elements</text>
+    <text x="192" y="104">Fields</text>
+    <text x="256" y="104">Forever</text>
+  </g>
+  <rect x="40" y="128" width="240" height="3" rx="1.5" fill="#1e293b"/>
+</svg>

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "templates": {
+    "stats-band": {
+      "slug": "stats-band",
+      "title": "Stats Band",
+      "category": "Stats",
+      "kind": "section",
+      "description": "A five-across band of animated counters with captions — great for a metrics or achievements strip.",
+      "thumb": "stats-band/thumb.svg"
+    },
+    "testimonials": {
+      "slug": "testimonials",
+      "title": "Testimonials",
+      "category": "Social proof",
+      "kind": "section",
+      "description": "A testimonials section with customer quotes — drop it in to add social proof.",
+      "thumb": "testimonials/thumb.svg"
+    },
+    "counters": {
+      "slug": "counters",
+      "title": "Counters Row",
+      "category": "Stats",
+      "kind": "section",
+      "description": "A compact row of animated number counters for highlighting key figures.",
+      "thumb": "counters/thumb.svg"
+    }
+  }
+}
