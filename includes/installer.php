@@ -62,7 +62,7 @@ if ( ! function_exists( 'fw_tpl_lib_catalog_url' ) ) :
 	function fw_tpl_lib_catalog_url() {
 		return apply_filters(
 			'fw_tpl_lib_catalog_url',
-			'https://raw.githubusercontent.com/UnysonPlus/UnysonPlus-Templates/master/catalog.json'
+			'https://raw.githubusercontent.com/UnysonPlus/UnysonPlus-Library/master/templates/catalog.json'
 		);
 	}
 endif;
@@ -189,7 +189,9 @@ if ( ! function_exists( 'fw_tpl_lib_install' ) ) :
 		}
 
 		$tpl      = $catalog['templates'][ $slug ];
-		$env_url  = $catalog['base_url'] . 'templates/' . $slug . '/' . $slug . '.json';
+		// base_url already points at the library-type subfolder (…/templates/),
+		// so each item lives directly under it as <slug>/<slug>.json.
+		$env_url  = $catalog['base_url'] . $slug . '/' . $slug . '.json';
 		$envelope = fw_tpl_lib__fetch_json( $env_url );
 		if ( is_wp_error( $envelope ) ) { return $envelope; }
 

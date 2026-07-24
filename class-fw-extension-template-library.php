@@ -40,6 +40,11 @@ class FW_Extension_Template_Library extends FW_Extension {
 		// Feed bundled + installed templates into the builder's predefined lists.
 		require_once dirname( __FILE__ ) . '/includes/predefined-templates.php';
 
+		// The rich in-builder panel that replaces the plain Templates inserter. Its
+		// hooks (admin_enqueue_scripts, wp_ajax_*) self-gate, so it's required
+		// unconditionally like the installer/predefined-templates includes.
+		require_once dirname( __FILE__ ) . '/includes/builder-panel.php';
+
 		if ( is_admin() ) {
 			require_once dirname( __FILE__ ) . '/includes/class-fw-template-library-settings-page.php';
 			$this->settings_page = new FW_Template_Library_Settings_Page( $this );
