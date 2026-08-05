@@ -25,8 +25,7 @@
 if ( ! function_exists( 'fw_tpl_lib_install_dir' ) ) :
 	/** Absolute path of the uploads install dir (no trailing slash). Filterable. */
 	function fw_tpl_lib_install_dir() {
-		$up = wp_upload_dir();
-		return apply_filters( 'fw_tpl_lib_install_dir', trailingslashit( $up['basedir'] ) . 'unysonplus-templates' );
+		return apply_filters( 'fw_tpl_lib_install_dir', fw_upw_uploads_dir( 'templates' )['path'] );
 	}
 endif;
 
