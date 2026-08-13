@@ -441,13 +441,13 @@
 
 		$tools.addClass( 'upw-tpl-active' );
 
-		// Remove the native Templates button ENTIRELY so its qtip popover can never
+		// Remove the native Templates button ENTIRELY so its tooltip popover can never
 		// open alongside our panel (that co-existence caused a stuck, unclickable
 		// overlay). We run this now AND after the current event dispatch, because the
 		// native handler listens to the same event and may add its button after ours.
 		function killNative() {
 			$tools.children( '.template-container' ).not( '.upw-tpl-mine' ).each( function () {
-				try { $( this ).find( '.template-btn' ).qtip( 'destroy', true ); } catch ( err ) {}
+				try { $( this ).find( '.template-btn' ).fwTooltip( 'destroy', true ); } catch ( err ) {}
 				$( this ).remove();
 			} );
 		}
@@ -455,7 +455,7 @@
 		setTimeout( killNative, 0 );
 		setTimeout( killNative, 400 );
 
-		// Our own trigger — a distinct class so the native qtip selector can't bind to it.
+		// Our own trigger — a distinct class so the native tooltip selector can't bind to it.
 		if ( ! $tools.find( '.upw-tpl-mine' ).length ) {
 			var $btn = $(
 				'<div class="template-container fw-pull-right upw-tpl-mine">' +

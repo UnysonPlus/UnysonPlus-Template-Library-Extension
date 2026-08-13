@@ -7,7 +7,7 @@
 }
 
 /* Our trigger — mirrors the native `.template-btn` look (cursor + dashicon) but
-   uses a distinct class so the native qtip popover is never bound to it. */
+   uses a distinct class so the native tooltip popover is never bound to it. */
 .upw-tpl-mine .upw-tplp-trigger {
 	cursor: pointer;
 	text-decoration: none;
@@ -24,7 +24,7 @@
 /* Overlay + panel. The dark backdrop is a dedicated child BELOW the panel (not the
    overlay's own background), and the panel is explicitly stacked above it — so the
    backdrop can never paint over the panel and swallow clicks. z-index is set above
-   the builder chrome and any qtip popover. */
+   the builder chrome and any tooltip popover. */
 .upw-tplp-overlay {
 	display: none;
 	position: fixed;
