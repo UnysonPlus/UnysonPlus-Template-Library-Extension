@@ -136,7 +136,8 @@ add_action( 'admin_enqueue_scripts', function ( $hook ) {
 	wp_enqueue_script(
 		'fw-tpl-lib-builder-panel',
 		$ext->get_uri( '/static/js/builder-panel.js' ),
-		array( 'jquery', 'fw', 'fw-events', 'backbone', 'underscore' ),
+		// 'backbone' dropped: builder-panel.js contains no Backbone call.
+		array( 'jquery', 'fw', 'fw-events' ),
 		$version,
 		true
 	);
