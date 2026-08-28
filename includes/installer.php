@@ -25,6 +25,7 @@
 if ( ! function_exists( 'fw_tpl_lib_install_dir' ) ) :
 	/** Absolute path of the uploads install dir (no trailing slash). Filterable. */
 	function fw_tpl_lib_install_dir() {
+		/** Filters the absolute uploads path where installed templates are stored (default uploads/unysonplus/templates). */
 		return apply_filters( 'fw_tpl_lib_install_dir', fw_upw_uploads_dir( 'templates' )['path'] );
 	}
 endif;
@@ -59,6 +60,7 @@ endif;
 if ( ! function_exists( 'fw_tpl_lib_catalog_url' ) ) :
 	/** URL of the catalog.json describing installable templates. Filterable. */
 	function fw_tpl_lib_catalog_url() {
+		/** Filters the URL of the Template Library remote catalog.json that lists installable templates. */
 		return apply_filters(
 			'fw_tpl_lib_catalog_url',
 			'https://raw.githubusercontent.com/UnysonPlus/UnysonPlus-Library/master/templates/catalog.json'
